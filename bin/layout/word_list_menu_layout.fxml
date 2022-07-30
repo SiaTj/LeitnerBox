@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="textArea" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fffacd;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.siamiri.gui.word.GuiWordController">
+    <TextField fx:id="txtNumberOfGermanWords" editable="false" layoutX="98.0" layoutY="115.0" prefHeight="32.0" prefWidth="60.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="120.0" />
+    <TextField fx:id="txtNumberOfEnglishWords" editable="false" layoutX="98.0" layoutY="158.0" prefHeight="32.0" prefWidth="60.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="160.0" />
+    <TextField fx:id="txtLengthOfGermanWords" editable="false" layoutX="207.0" layoutY="115.0" prefHeight="32.0" prefWidth="60.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="120.0" />
+    <TextField fx:id="txtLengthOfEnglishWords" editable="false" layoutX="207.0" layoutY="158.0" prefHeight="32.0" prefWidth="60.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="160.0" />
+    <Label fx:id="lblNumberOfWords" layoutX="84.0" layoutY="87.0" prefHeight="18.0" prefWidth="90.0" text="Number of Words" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="100.0">
+        <font>
+          <Font size="11.0" />
+        </font>
+    </Label>
+    <Label fx:id="lblLengthOfWords" layoutX="193.0" layoutY="87.0" prefHeight="18.0" prefWidth="90.0" text="Length of Words" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="100.0">
+        <font>
+          <Font size="11.0" />
+        </font>
+    </Label>
+    <TextField fx:id="txtGermanWord" layoutX="381.0" layoutY="37.0" prefHeight="32.0" prefWidth="280.0" promptText="Enter your German word" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="45.0" />
+    <TextField fx:id="txtEnglishWord" layoutX="381.0" layoutY="73.0" prefHeight="32.0" prefWidth="280.0" promptText="Enter your English word" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="80.0" />
+    <Button fx:id="btnSave" layoutX="299.0" layoutY="119.0" mnemonicParsing="false" onAction="#saveWord" prefHeight="32.0" prefWidth="70.0" text="Add" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="120.0" />
+    <Button fx:id="btnDelete" layoutX="393.0" layoutY="119.0" mnemonicParsing="false" onAction="#deleteWord" prefHeight="32.0" prefWidth="70.0" text="Delete" AnchorPane.leftAnchor="380.0" AnchorPane.topAnchor="120.0" />
+    <MenuBar layoutX="1.0" layoutY="-2.0" prefHeight="32.0" prefWidth="600.0" style="-fx-background-color: #f0e68c;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <menus>
+          <Menu mnemonicParsing="false" text="File">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#menuItemClose" text="Close" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuItemLogout" text="Logout" />
+              </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
+              </items>
+          </Menu>
+      </menus>
+    </MenuBar>
+    <Label fx:id="lblGermanLength" layoutX="195.0" layoutY="206.0" text="English" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="210.0" />
+    <Label fx:id="lblEnglishLength" layoutX="14.0" layoutY="158.0" prefHeight="32.0" prefWidth="60.0" text="English" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="160.0" />
+    <Button layoutX="300.0" layoutY="167.0" mnemonicParsing="false" onAction="#btnLeitnerBoxWordOrder" prefHeight="32.0" prefWidth="280.0" text="Leitner box" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="160.0" />
+    <ListView fx:id="lvWords" layoutX="186.0" layoutY="200.0" prefHeight="170.0" prefWidth="283.0" style="-fx-background-color: #e0ffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="230.0" />
+    <ChoiceBox disable="true" layoutX="121.0" layoutY="45.0" prefHeight="32.0" prefWidth="60.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="60.0" />
+    <Label layoutX="14.0" layoutY="50.0" prefHeight="32.0" prefWidth="60.0" text="Sort by" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="60.0" />
+    <Button fx:id="btnAddImage" layoutX="487.0" layoutY="158.0" mnemonicParsing="false" onAction="#uploadImage" prefHeight="32.0" prefWidth="120.0" text="add Image" AnchorPane.leftAnchor="460.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="120.0" />
+    <Label fx:id="lblLengthOfWords1" layoutX="190.0" layoutY="110.0" prefHeight="20.0" prefWidth="80.0" text="Total List Words" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="40.0">
+        <font>
+          <Font size="11.0" />
+        </font>
+    </Label>
+    <TextField fx:id="txtNumberOfUserWord" editable="false" layoutX="210.0" layoutY="130.0" prefHeight="32.0" prefWidth="60.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="60.0" />
+   <Label layoutX="14.0" layoutY="213.0" text="German" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="210.0" />
+   <Label layoutX="335.0" layoutY="214.0" text="Leitner Box Number" AnchorPane.leftAnchor="320.0" AnchorPane.topAnchor="210.0" />
+   <Label layoutX="505.0" layoutY="214.0" text="Date" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="210.0" />
+   <Label fx:id="lblEnglishLength1" layoutX="20.0" layoutY="170.0" prefHeight="32.0" prefWidth="60.0" text="German" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="120.0" />
+</AnchorPane>

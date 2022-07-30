@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This Application is developed by @SiaMir" wrappingWidth="235.90673828125" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="30.0" />
+      <Text layoutX="40.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For any problem contact:" wrappingWidth="144.90673828125" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="60.0" />
+      <Text layoutX="40.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SiaMiriSupport@gmail.com" wrappingWidth="163.90673828125" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="100.0" />
+   </children>
+</AnchorPane>

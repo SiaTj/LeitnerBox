@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="tfLastViewedDate" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f0ffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.siamiri.gui.leitnerBox.GuiLeitnerBoxController">
+    <Button fx:id="btnAnswer" disable="true" layoutX="269.0" layoutY="47.0" mnemonicParsing="false" onAction="#btnShowAnswer" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" text="Answer" textFill="WHITE" AnchorPane.leftAnchor="260.0" AnchorPane.topAnchor="40.0" />
+    <Button fx:id="btnCorrect" disable="true" layoutX="30.0" layoutY="306.0" mnemonicParsing="false" onAction="#btnCorrectAnswer" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #3cb371; -fx-background-radius: 20;" text="Correct" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="300.0" />
+    <Button fx:id="btnFalse" disable="true" layoutX="447.0" layoutY="339.0" mnemonicParsing="false" onAction="#btnFalseAnswer" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #ff0000; -fx-background-radius: 20;" text="False" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="300.0" />
+    <ImageView fx:id="imageWordToShow" fitHeight="220.0" fitWidth="230.0" layoutX="118.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="100.0" />
+    <Label layoutX="282.0" layoutY="303.0" prefHeight="70.0" prefWidth="116.0" text="If you guess word correctly enter --&gt;Correct&lt;-- otherwise enter --&gt;Fasle&lt;--" textAlignment="CENTER" textFill="#246b36" wrapText="true" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="300.0">
+        <font>
+          <Font size="12.0" />
+        </font>
+    </Label>
+    <MenuBar style="-fx-background-color: #add8e6 #add8e6;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <Menu mnemonicParsing="false" text="File">
+            <MenuItem mnemonicParsing="false" onAction="#returnHome" text="Return home" />
+            <MenuItem mnemonicParsing="false" onAction="#logout" text="Logout" />
+            <MenuItem mnemonicParsing="false" onAction="#closeApp" text="Close" />
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+            <MenuItem mnemonicParsing="false" onAction="#showAbout" text="About" />
+        </Menu>
+    </MenuBar>
+    <Label layoutX="85.0" layoutY="100.0" text="Last Reviewed Date:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="100.0" />
+    <Label fx:id="lblLastReviewedDate" layoutX="50.0" layoutY="127.0" text="dd.MM.YYYY" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="127.0" />
+    <TextField fx:id="txtShowChosenWord" editable="false" layoutX="158.0" layoutY="158.0" prefHeight="40.0" prefWidth="200.0" style="-fx-opacity: 1.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="40.0" />
+    <TextField fx:id="txtShowAnswer" editable="false" layoutX="40.0" layoutY="50.0" prefHeight="40.0" prefWidth="200.0" style="-fx-opacity: 1.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="40.0" />
+    <Label layoutX="20.0" layoutY="166.0" text="Current Box" />
+    <Label fx:id="lblCurrentBox" layoutX="20.0" layoutY="193.0" text="!" />
+    <Button alignment="CENTER" contentDisplay="CENTER" layoutX="508.0" layoutY="136.0" mnemonicParsing="false" onAction="#changeShownWordOrder" prefHeight="70.0" prefWidth="70.0" style="-fx-background-radius: 20; -fx-background-color: #f0e68c;" text="Reverse Order" textAlignment="CENTER" wrapText="true" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="150.0" />
+</AnchorPane>

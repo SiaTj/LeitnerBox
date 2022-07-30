@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.siamiri.gui.user.GuiCreateNewUser">
+   <children>
+      <Label alignment="CENTER" layoutX="270.0" layoutY="6.0" text="Add new user" AnchorPane.bottomAnchor="170.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label layoutX="10.0" layoutY="50.0" prefHeight="32.0" text="Username" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="230.0" AnchorPane.topAnchor="50.0" />
+      <Label layoutX="-1.0" layoutY="127.0" prefHeight="32.0" text="Password" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="230.0" AnchorPane.topAnchor="100.0" />
+      <TextField fx:id="txtNewUsername" layoutX="70.0" layoutY="45.0" prefHeight="32.0" promptText="Enter username" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0" />
+      <Button layoutX="123.0" layoutY="148.0" mnemonicParsing="false" onAction="#addUserToCsv" text="Add" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="145.0" />
+      <PasswordField fx:id="txtNewPasswort" layoutX="70.0" layoutY="100.0" prefHeight="32.0" promptText="Enter  passwort" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="100.0" />
+   </children>
+</AnchorPane>

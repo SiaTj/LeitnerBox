@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="src/com/siamiri/resource"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Encrypter"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/lib"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/mariadb-java-client-2.7.2-javadoc"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
